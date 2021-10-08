@@ -15,21 +15,16 @@ export class FetchApiDataService {
  // This will provide HttpClient to the entire class, making it available via this.http
  constructor(private http: HttpClient) { }
 // Making the api call for the user registration endpoint
-userRegistration(userDetails: any): Observable<any> {
+public userRegistration(userDetails: any): Observable<any> {
   console.log(userDetails);
   return this.http.post(apiUrl + 'users', userDetails).pipe(
   catchError(this.handleError)
   );
 }
 
-registerUser(userData: any): Observable<any> {
-  return this.http.post(apiUrl + 'users', userData).pipe(
-      catchError(this.handleError)
-    );
-  }
-
-loginUser(userData: any): Observable<any> {
-  return this.http.post(apiUrl + 'users', userData).pipe(
+public loginUser(userDetails: any): Observable<any> {
+  console.log(userDetails);
+  return this.http.post(apiUrl + 'login', userDetails).pipe(
       catchError(this.handleError)
     );
   }
