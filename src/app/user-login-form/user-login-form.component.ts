@@ -27,9 +27,10 @@ ngOnInit(): void {
 
 loginUser(): void {
     this.fetchApiData.loginUser(this.userData).subscribe((response) => {
-    localStorage.setItem('username', response.user.username);
+    localStorage.setItem('Username', response.user.Username);
     localStorage.setItem('token', response.token);
     this.dialogRef.close();
+    console.log(response);
     this.snackBar.open(response, 'OK', {
       duration: 2000
     });

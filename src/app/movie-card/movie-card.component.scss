@@ -1,0 +1,27 @@
+.favorite-button {
+  cursor: pointer;
+}
+
+.header {
+  background: rgb(99, 199, 233);
+  color: black;
+  display: flex;
+  flex: 50%;
+  border-radius: 10px;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.actions {
+  background: rgb(245, 176, 87);
+  color: black;
+  flex: 50%;
+  border-radius: 15px;
+  padding: 5px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  display: inline-block;
+}
