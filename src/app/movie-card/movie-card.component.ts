@@ -81,7 +81,7 @@ addToUsersFavorites(id:string, Title:string): void {
 removeFromUsersFavorites(id:string, Title:string): void {
   this.fetchApiData.deleteUserFavMovie(id).subscribe((res: any) => {
     this.snackBar.open(`${Title} has been removed from favorties`, 'OK', {
-      duration: 3000,
+      duration: 2000,
     })
     setTimeout(function() {
       window.location.reload()}, 3000);

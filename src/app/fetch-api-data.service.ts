@@ -104,8 +104,8 @@ deleteUserFavMovie(id: string): Observable<any> {
   }
 
 EditUserInfo(userDetails: any): Observable<any> {
-  const token = localStorage.getItem('item');
-  const user = localStorage.getItem('user');
+  const token = localStorage.getItem('token');
+  const user = localStorage.getItem('Username');
   console.log(userDetails);
   return this.http.put(apiUrl + `users/${user}`, userDetails,  {headers: new HttpHeaders(
     {
@@ -117,8 +117,8 @@ EditUserInfo(userDetails: any): Observable<any> {
   }
 
 deleteUser(Username: string): Observable<any> {
-  const token = localStorage.getItem('item');
-  const user = localStorage.getItem('user');
+  const token = localStorage.getItem('token');
+  const user = localStorage.getItem('Username');
   return this.http.delete(apiUrl + `users/${user}`, {headers: new HttpHeaders(
     {
       Authorization: 'Bearer ' + token,
