@@ -24,6 +24,10 @@ export class MovieCardComponent {
     public snackBar: MatSnackBar
     ) { }
 
+/**
+ * run component
+ * run getMovies and getUsersFavorites functions
+ */
 ngOnInit(): void {
   this.getMovies();
   this.getUsersFavorites();
