@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
+## Features
+
+Welcome view for user to log in or register.
+Movie view where users see all movies and can view the movie's genre, director, or synopsis. 
+User can also add the movie to a list of favorites. 
+User profile page where they can edit their info and their favorites list.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
